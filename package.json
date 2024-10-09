@@ -1,0 +1,26 @@
+
+{
+  "name": "vulnerable-pnpm-project",
+  "version": "1.0.0",
+  "description": "A sample project with vulnerable dependencies for testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.19"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "pnpm": ">=6.0.0"
+  },
+  "pnpm": {
+    "hooks": {
+      "readPackage": [
+        "pnpm-hook-example"
+      ]
+    }
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
